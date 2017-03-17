@@ -1,5 +1,4 @@
 import urllib
-#from lxml import html
 from bs4 import BeautifulSoup
 import re
 import json
@@ -53,7 +52,6 @@ if os.path.isfile(dump_file):
   # Load existing data.
   with open(dump_file) as fin:
     words_by_episode = json.load(fin)
-  print 'loaded shit'
 else:
   # Get data.
   base_url = "http://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=the-simpsons&episode=s%.2de%.2d"
